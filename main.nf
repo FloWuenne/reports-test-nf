@@ -47,6 +47,7 @@ workflow {
     
     REPORTS(
         MULTIQC.out,
-        Channel.of("${projectDir}/resources/AF-Q5VSL9-F1-model_v4.pdb")
+        Channel.of("${projectDir}/resources/6YEJ.pdb")
+        Channel.of("${projectDir}/resources/6X9O.pdb")
     )
 }

@@ -3,6 +3,10 @@ reports:
    MultiQC Report.html:
       display: "MultiQC Report"
 
-   AF-Q5VSL9-F1-model_v4.pdb:
-      display: "Pdb file"
+   6YEJ.pdb:
+      display: "Cryo-EM structure of the Full-length disease type human Huntingtin "
+      mimeType: "chemical/x-pdb"
+
+   6X9O.pdb:
+      display: "High resolution cryoEM structure of huntingtin in complex with HAP40 "
       mimeType: "chemical/x-pdb"

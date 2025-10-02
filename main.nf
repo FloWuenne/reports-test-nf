@@ -26,11 +26,13 @@ process REPORTS {
 
     input:
     val multiqc_reports
-    path(pdb_file)
+    path(pdb_file1)
+    path(pdb_file2)
+    
     
     output:
-    path(pdb_file)
-    
+    path(pdb_file1)
+    path(pdb_file2)
 
 
     script:
@@ -47,7 +49,7 @@ workflow {
     
     REPORTS(
         MULTIQC.out,
-        Channel.of("${projectDir}/resources/6YEJ.pdb")
+        Channel.of("${projectDir}/resources/6YEJ.pdb"),
         Channel.of("${projectDir}/resources/6X9O.pdb")
     )
 }
